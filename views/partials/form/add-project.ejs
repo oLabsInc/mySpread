@@ -1,0 +1,26 @@
+<style>
+    .add-form {
+        background-color: rgba(135, 206, 250, 0.295);
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(4px);
+        box-shadow: inset 0 0 34px rgba(135, 206, 250, 0.219);
+        border: solid 1px lightskyblue;
+
+    }
+</style>
+
+
+<form class="add-form" action="/projects/new/add" method="post">
+    <input type="text" name="user_email" id="userEmail" placeholder="User Email">
+    <input type="time" name="user_signed_up_time" id="userSignedUpTime">
+    <input type="color" name="user_glow_choice" id="userGlowChoice">
+    <input type="password" name="user_password" id="userPassword">
+    <button type="submit">Add</button>
+</form>

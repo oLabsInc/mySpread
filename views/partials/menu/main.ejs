@@ -1,0 +1,47 @@
+<style>
+    #mainMenuContainer {
+        background-color: #111111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100px;
+        box-shadow: 0 10px 8px rgba(14, 111, 172, 0.473), inset 0 40px 30px #0000008c;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    #mainMenu>ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 100px;
+    }
+    #mainMenu>ul>li {
+        background-color: #222;
+        box-shadow: inset -3px -3px 4px #111, inset 3px 3px 4px #333, 0 0 3px #000, inset 0 0 28px rgba(135, 206, 250, 0.096);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        list-style: none;
+    }   
+    #mainMenu>ul>li>a {
+        color: lightskyblue;
+        text-decoration: none;
+        font-size: 1.75rem;
+        text-shadow: -2px 5px 1px #000;
+    }
+</style>
+
+
+<div id="mainMenuContainer">
+    <div id="mainMenu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/vr">VR</a></li>
+        </ul>
+    </div>
+</div>
